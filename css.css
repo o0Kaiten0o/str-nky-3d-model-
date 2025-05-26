@@ -1,0 +1,104 @@
+/* Celé tělo stránky - vystředění obsahu */
+body {
+    background-color: #363636;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Kontejner, který drží kruhy a tlačítka */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px; /* Větší mezera mezi kruhy a tlačítky */
+}
+
+/* Styl kruhů */
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+/* WAN - Největší kruh */
+.wan {
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAN - Střední kruhy */
+.man {
+    width: 170px;
+    height: 170px;
+    background-color: #28a745;
+    position: absolute;
+}
+
+/* Umístění MAN kruhů */
+.man1 { top: 20%; left: 10%; }
+.man2 { top: 30%; right: 5%; }
+.man3 { bottom: 10%; left: 50%; transform: translateX(-50%); }
+
+/* LAN - Nejmenší kruhy */
+.lan {
+    width: 60px;
+    height: 60px;
+    background-color: #fd7e14;
+    position: absolute;
+}
+
+/* Umístění LAN kruhů */
+.lan1 { top: 7%; left: 30%; }
+.lan2 { top: 15%; left: 10%; }
+.lan3 { bottom: 13%; right: 10%; }
+.lan4 { bottom: 60%; right: 40%; }
+
+/* Tlačítka */
+.Tlacitka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Větší mezera mezi tlačítky */
+}
+
+/* Styl tlačítek */
+.Tlacitka input {
+    background-color: rgb(85, 85, 85);
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover efekt */
+.Tlacitka input:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+/* Automatické přizpůsobení tlačítek šířce okna */
+.wrap {
+    white-space: normal;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    text-align: left;
+}
