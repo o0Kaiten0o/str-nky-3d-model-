@@ -1,0 +1,1 @@
+# str-nky-3d-model-
